@@ -22,14 +22,11 @@ a:hover {
 	margin-bottom: 100px;
 }
 
-.titre-text {
+.title-text {
 	text-shadow:0 0 3px MediumSlateBlue;
 	animation-name: titre-anim;
    animation-duration: 2s;
    animation-iteration-count: infinite;
-   font-weight: bolder;
-   color:  #956a6a;
-   font-family: Righteous;
 }
 
 .button-menu{
