@@ -5,9 +5,24 @@ body{
    font-family: Righteous;
 }
 
+a {
+	text-decoration: none;
+	color: #BF5C2E;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #BF5C2E;
+	text-shadow: 0 0 1px white;
+}
+
 /* MENU */
 
 .titre {
+	margin-bottom: 100px;
+}
+
+.titre-text {
 	text-shadow:0 0 3px MediumSlateBlue;
 	animation-name: titre-anim;
    animation-duration: 2s;
@@ -17,13 +32,14 @@ body{
    font-family: Righteous;
 }
 
-.bouton-menu{
+.button-menu{
 	max-width: 150px;
 	border-radius: 50%;
 	padding: 60px 60px;
-	border: solid white 5px;
+	border: solid white 4px;
 	margin: auto 40px;
 	box-shadow: 10px 10px 5px #000000;
+	
 }
 
 @keyframes btn1-anim {
@@ -49,13 +65,11 @@ body{
 .jumbotron {
 	background-image: url("../media/titre-b2.jpg");
 	background-size: cover;
-	border-bottom: solid black 4px;
-	margin-bottom: 100px;
+	border-bottom: solid white 3px;
+	border-top: solid white 3px;
+	border-radius: 20px;
 }
 
-.btn:hover {
-	border: solid white 5px;
-}	
 
 .btn1:hover{
 	position: relative;
@@ -108,10 +122,25 @@ body{
 
 /* AUTRES */
 
+.well {
+	background-color: rgba(45, 75, 95, 0.2);
+}
 
 
 @keyframes titre-anim {
-	0%		{text-shadow:0 0 3px #595C96}
-	50% 	{text-shadow:0 0 3px #c64f16}
-	100%	{text-shadow:0 0 3px #595C96}
+	0%		{text-shadow:0 0 8px #595C96}
+	50% 	{text-shadow:0 0 8px #c64f16}
+	100%	{text-shadow:0 0 8px #595C96}
+}
+
+#back-to-top {
+	background-color: black;
+	opacity: 0.7;
+	border: solid 1px #BF5C2E;
+	position: fixed;
+	right: 0px;
+}
+
+.infos {
+	line-height: 28px;
 }
