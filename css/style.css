@@ -1,8 +1,14 @@
+			
+			
+						/* SELECTEURS GENERAUX */
+
+
 body{
-	background-color: black;
+	background-color: #0d0d0d;
 	font-weight: bolder;
    color:  #956a6a;
-   font-family: Righteous;
+   position: relative;	
+   
 }
 
 a {
@@ -16,84 +22,60 @@ a:hover {
 	text-shadow: 0 0 1px white;
 }
 
-/* MENU */
-
-.titre {
-	margin-bottom: 100px;
+label {
+	color: #BF5C2E;
+	text-shadow: 0 0 2px black;
+	box-shadow: 0 0 2px black;
+	border: solid 1px #BF5C2E;
+	padding: 5px;
+	border-radius: 5px;
 }
 
-.title-text {
-	text-shadow:0 0 3px MediumSlateBlue;
-	animation-name: titre-anim;
-   animation-duration: 2s;
-   animation-iteration-count: infinite;
+h3 {
+	font-weight: bold;
+}
+			
+			
+						/* CONTACT */
+
+
+.logo{
+	opacity: 0.5;
 }
 
-.button-menu{
-	max-width: 150px;
-	border-radius: 50%;
-	padding: 60px 60px;
-	border: solid white 4px;
-	margin: auto 40px;
-	box-shadow: 10px 10px 5px #000000;
+.logo:hover {
+	animation-name: btn-anim;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}		
+
+@media screen and (max-width: 768px) {
+	.contact {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		z-index: +1;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.contact {
+		position: fixed;
+		top: 10px;
+		left: 0px;
+	}
+}
 	
-}
+			
 
-@keyframes btn1-anim {
-    from	{ top:0px;}
-    to 	{opacity: 1.0; top:40px; background-color: #3260C5}
-}
-
-@keyframes btn2-anim {
-    from	{ top:0px;}
-    to 	{opacity: 1.0; top:40px; background-color: #595C96}
-}
-
-@keyframes btn3-anim {
-    from	{ top:0px;}
-    to 	{opacity: 1.0; top:40px; background-color:  #9E5445}
-}
-
-@keyframes btn4-anim {
-    from	{ top:0px;}
-    to 	{opacity: 1.0; top:40px; background-color: #c64f16}
-}
-
+						/* MENU */
+						
+			
 .jumbotron {
 	background-image: url("../media/titre-b2.jpg");
 	background-size: cover;
 	border-bottom: solid white 3px;
 	border-top: solid white 3px;
-	border-radius: 20px;
-}
-
-
-.btn1:hover{
-	position: relative;
-   animation-name: btn1-anim;
-   animation-duration: 0.7s;
-   animation-fill-mode: forwards;
-}
-
-.btn2:hover{
-	position: relative;
-   animation-name: btn2-anim;
-   animation-duration: 0.7s;
-   animation-fill-mode: forwards;
-}
-
-.btn3:hover{
-	position: relative;
-   animation-name: btn3-anim;
-   animation-duration: 0.7s;
-   animation-fill-mode: forwards;
-}
-
-.btn4:hover{
-	position: relative;
-   animation-name: btn4-anim;
-   animation-duration: 0.7s;
-   animation-fill-mode: forwards;
 }
 
 .btn1 {
@@ -117,12 +99,42 @@ a:hover {
 	opacity: 0.5;
 }
 
-/* AUTRES */
-
-.well {
-	background-color: rgba(45, 75, 95, 0.2);
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
+	position: relative;
+   animation-name: btn-anim;
+   animation-duration: 0.7s;
+   animation-fill-mode: forwards;
 }
 
+.button-menu{
+	max-width: 150px;
+	border-radius: 50%;
+	padding: 60px 60px;
+	border: solid white 4px;
+	margin: auto 40px;
+	box-shadow: 10px 10px 5px #000000;	
+}
+
+.menu {
+	margin-top: 40px;
+}
+
+.title {
+	margin-bottom: 100px;
+}
+
+.title-text {
+	text-shadow:0 0 3px MediumSlateBlue;
+	animation-name: titre-anim;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   font-family: 'Righteous', cursive;
+}
+
+@keyframes btn-anim {
+    from	{}
+    to 	{opacity: 1.0;}
+}
 
 @keyframes titre-anim {
 	0%		{text-shadow:0 0 8px #595C96}
@@ -130,14 +142,36 @@ a:hover {
 	100%	{text-shadow:0 0 8px #595C96}
 }
 
+			
+						/* ABOUT ME */
+			
+			
+.infos {
+	line-height: 28px;
+}
+
+.photo {
+	border: solid 2px black;
+}	
+		
+			
+						/* AUTRES */
+						
+
+.well {
+	background-color: rgba(45, 75, 95, 0.2);
+}
+
+
 #back-to-top {
 	background-color: black;
 	opacity: 0.7;
+	color: #BF5C2E;
+	text-shadow: 0 0 2px black;
 	border: solid 1px #BF5C2E;
 	position: fixed;
 	right: 0px;
 }
 
-.infos {
-	line-height: 28px;
-}
+
+
