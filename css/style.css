@@ -6,7 +6,7 @@
 body{
 	background-color: #0d0d0d;
 	
-   color:  #956a6a;
+   color:  #B9A3A6;
    position: relative;	
    
 }
@@ -23,10 +23,10 @@ a:hover {
 }
 
 label {
-	color: #BF5C2E;
+	color: #B9A3A6;
 	text-shadow: 0 0 2px black;
 	box-shadow: 0 0 2px black;
-	border: solid 1px #BF5C2E;
+	border: solid 1px #B9A3A6;
 	padding: 5px;
 	border-radius: 5px;
 }
@@ -38,7 +38,11 @@ h3 {
 h3, dt, li {
 	font-weight: bold;
 }			
-			
+
+h1 {
+	margin-top: 10px;
+}
+		
 						/* CONTACT */
 
 
@@ -52,24 +56,18 @@ h3, dt, li {
 	animation-fill-mode: forwards;
 }		
 
-@media screen and (max-width: 768px) {
-	.contact {
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
-		z-index: +1;
-	}
+@keyframes btn-anim {
+	from	{} 
+	to		{opacity: 1;}
 }
 
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 993px) {
 	.contact {
-		position: fixed;
-		top: 10px;
-		left: 0px;
-	}
+		position: relative;
+		top: 100px;
+	}		
 }
-	
-			
 
 						/* MENU */
 						
@@ -79,6 +77,8 @@ h3, dt, li {
 	background-size: cover;
 	border-bottom: solid white 3px;
 	border-top: solid white 3px;
+	margin-top: 50px;
+	padding: 0 10px 10px 10px;
 }
 
 .btn1 {
@@ -105,7 +105,7 @@ h3, dt, li {
 .button-menu{
 	max-width: 150px;
 	border-radius: 50%;
-	padding: 60px 60px;
+	padding: 30px;
 	border: solid white 3px;
 	margin: auto 40px;
 	box-shadow: 10px 10px 5px #000000;	
@@ -128,9 +128,9 @@ h3, dt, li {
 }
 
 @keyframes titre-anim {
-	0%		{text-shadow:0 0 8px #595C96}
-	50% 	{text-shadow:0 0 8px #c64f16}
-	100%	{text-shadow:0 0 8px #595C96}
+	0%		{text-shadow:0 0 12px #595C96}
+	50% 	{text-shadow:0 0 12px #c64f16}
+	100%	{text-shadow:0 0 12px #595C96}
 }
 
 			
@@ -153,18 +153,14 @@ h3, dt, li {
 	background-color: rgba(45, 75, 95, 0.2);
 }
 
-
-#back-to-top {
-	background-color: black;
-	opacity: 0.7;
-	color: #BF5C2E;
-	text-shadow: 0 0 2px black;
-	border: solid 1px #BF5C2E;
-	position: fixed;
-	right: 0px;
-}
-
 #section1, #section2, #section3, #section4 {
 	display: none;
 }
 
+.opacity-on {
+	opacity: 1;
+}
+
+.white-shadow {
+	box-shadow: 0px 0px 8px white;
+}
