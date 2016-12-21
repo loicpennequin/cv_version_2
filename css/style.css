@@ -82,38 +82,31 @@ h3, dt, li {
 }
 
 .btn1 {
-	background-color: #c64f16;
-	opacity: 0.5;
+	background-color: #F54F02;
+	opacity: 0.3;
 
 }
 
 .btn2 {
-	background-color: #9E5445;
-	opacity: 0.5;
+	background-color: #BB654E;
+	opacity: 0.3;
 }
 
 .btn3 {
-	background-color: #595C96;
-	opacity: 0.5;
+	background-color: #817B9A;
+	opacity: 0.3;
 }
 
 .btn4 {
-	background-color: #3260C5;
-	opacity: 0.5;
-}
-
-.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
-	position: relative;
-   animation-name: btn-anim;
-   animation-duration: 0.7s;
-   animation-fill-mode: forwards;
+	background-color: #3399FF;
+	opacity: 0.3;
 }
 
 .button-menu{
 	max-width: 150px;
 	border-radius: 50%;
 	padding: 60px 60px;
-	border: solid white 4px;
+	border: solid white 3px;
 	margin: auto 40px;
 	box-shadow: 10px 10px 5px #000000;	
 }
@@ -132,11 +125,6 @@ h3, dt, li {
    animation-duration: 2s;
    animation-iteration-count: infinite;
    font-family: 'Righteous', cursive;
-}
-
-@keyframes btn-anim {
-    from	{}
-    to 	{opacity: 1.0;}
 }
 
 @keyframes titre-anim {
