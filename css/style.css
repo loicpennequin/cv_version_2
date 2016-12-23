@@ -70,7 +70,7 @@ h1 {
   margin-top: 50px;
   opacity: 0;
   animation-name: jumbo;
-  animation-duration: 2, 5s;
+  animation-duration: 2.5s;
   animation-fill-mode: forwards; }
 
 @keyframes jumbo {
@@ -83,6 +83,7 @@ h1 {
     background-image: url("../media/titre-b3.jpg"); } }
 @media screen and (max-width: 768px) {
   #title-slide {
+    text-align: center;
     position: relative;
     right: 50px; } }
 #title-slide {
@@ -159,6 +160,9 @@ h1 {
 
 .progress-bar {
   background-color: #BF5C2E; }
+
+.langues {
+  line-height: 40px; }
 
 /* AUTRES */
 #section1, #section2, #section3, #section4 {

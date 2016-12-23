@@ -5,17 +5,17 @@ $(document).ready(function(){
     $('#title-slide').delay(1500).animate({
     	marginLeft:"+=33%",
     	opacity: 1
-    	}, 1000);
+    	}, 500);
     	
-    $('.logofb').delay(2500).animate({
+    $('.logofb').delay(2000).animate({
     	opacity: 0.5
     	}, 400);
     	
-    $('.logolkdn').delay(2800).animate({
+    $('.logolkdn').delay(2300).animate({
     	opacity: 0.5
     	}, 400);
     	
-    $('.logogit').delay(3100).animate({
+    $('.logogit').delay(2600).animate({
     	opacity: 0.5
     	}, 400);
     
