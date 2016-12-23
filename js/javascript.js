@@ -1,10 +1,32 @@
 $(document).ready(function(){
    
+   
+   
+    $('#title-slide').delay(2000).animate({
+    	marginLeft:"+=33%",
+    	opacity: 1
+    	}, 1000);
+    	
+    $('.logofb').delay(3000).animate({
+    	opacity: 0.5
+    	}, 400);
+    	
+    $('.logolkdn').delay(3400).animate({
+    	opacity: 0.5
+    	}, 400);
+    	
+    $('.logogit').delay(3800).animate({
+    	opacity: 0.5
+    	}, 400);
+    
+	 
+	 
+	 
 	 $("#btn1").on("click", function(){
 	 		$("#section1").toggle("slow","swing");
 	 		$("#section2, #section3, #section4").hide("slow");
 			$("#btn1").toggleClass("button-pressed");
-			$("#btn2, #btn3, #btn4").removeClass("button-pressed");	
+			$("#btn2, #btn3, #btn4").removeClass("button-pressed");
 	 });
 	 
 	  $("#btn2").on("click", function(){
@@ -28,6 +50,8 @@ $(document).ready(function(){
 			$("#btn1, #btn2, #btn3").removeClass("button-pressed");
 			
 	 });
+	 
+	
 	 
 });
 	 
