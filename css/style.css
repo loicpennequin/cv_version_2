@@ -60,11 +60,10 @@ h1 {
     position: relative;
     top: 40px; } }
 /* MENU */
- *
- *
- * /* TITRE */
+/* TITRE */
 .jumbotron {
   background-image: url("../media/titre-b2.jpg");
+  background-color: black;
   background-size: cover;
   border-bottom: solid white 3px;
   border-top: solid white 3px;
@@ -107,8 +106,8 @@ h1 {
   50% {
     text-shadow: 0 0 6px #488CD3; }
   100% {
-    text-shadow: 0 0 6px #DC1421;
-    /* BOUTONS */ } }
+    text-shadow: 0 0 6px #DC1421; } }
+/* BOUTONS */
 .btn1 {
   background-color: #DC1421;
   opacity: 0.3; }
