@@ -11,8 +11,7 @@ a {
   color: #BF5C2E; }
   a:hover {
     text-decoration: none;
-    color: #BF5C2E;
-    text-shadow: 0 0 1px white; }
+    color: #DC1421; }
 
 label {
   color: #B9A3A6;
@@ -43,16 +42,16 @@ h1 {
   opacity: 0; }
   .logofb:hover, .logolkdn:hover, .logogit:hover {
     animation-name: btn-anim;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards; }
 
 @keyframes btn-anim {
   from {
     transform: translate3d(0, 0, 0); }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translate3d(-10px, 0, 0); }
-  20%, 40%, 60%, 80% {
-    transform: translate3d(10px, 0, 0); }
+  15%, 45%, 75% {
+    transform: translate3d(-8px, 0, 0); }
+  30%, 60%, 60%, 90% {
+    transform: translate3d(8px, 0, 0); }
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
@@ -61,7 +60,9 @@ h1 {
     position: relative;
     top: 40px; } }
 /* MENU */
-/* TITRE */
+ *
+ *
+ * /* TITRE */
 .jumbotron {
   background-image: url("../media/titre-b2.jpg");
   background-size: cover;
@@ -87,7 +88,8 @@ h1 {
     position: relative;
     right: 50px; } }
 #title-slide {
-  opacity: 0; }
+  opacity: 0;
+  font-family: "Abril Fatface", cursive; }
 
 .title {
   margin-bottom: 10px; }
@@ -105,8 +107,8 @@ h1 {
   50% {
     text-shadow: 0 0 6px #488CD3; }
   100% {
-    text-shadow: 0 0 6px #DC1421; } }
-/* BOUTONS */
+    text-shadow: 0 0 6px #DC1421;
+    /* BOUTONS */ } }
 .btn1 {
   background-color: #DC1421;
   opacity: 0.3; }

@@ -1,7 +1,10 @@
-$border-color: white
+
 
 
 /* SELECTEURS GENERAUX */
+
+
+
 
 body 
   background-color: #0d0d0d
@@ -17,8 +20,7 @@ a
 
   &:hover 
     text-decoration: none
-    color: #BF5C2E
-    text-shadow: 0 0 1px white
+    color: #DC1421
   
 
 label 
@@ -46,26 +48,32 @@ h1
 
 .well 
   background-color: rgba(45, 75, 95, 0.2)
+  
+  
+  
 
 /* CONTACT */
+
+
+
 
 .logofb, .logolkdn, .logogit
   opacity: 0
 
   &:hover 
     animation-name: btn-anim
-    animation-duration: 1s
+    animation-duration: 0.7s
     animation-fill-mode: forwards
   
 @keyframes btn-anim 
   from
     transform: translate3d(0, 0, 0)
 
-  10%, 30%, 50%, 70%, 90%
-    transform: translate3d(-10px, 0, 0)
+  15%, 45%, 75%
+    transform: translate3d(-8px, 0, 0)
 
-  20%, 40%, 60%, 80% 
-    transform: translate3d(10px, 0, 0)
+  30%, 60%, 60%, 90% 
+    transform: translate3d(8px, 0, 0)
   to
     transform: translate3d(0,0,0)
     opacity: 1
@@ -76,8 +84,15 @@ h1
     top: 40px
     
   
+  
+  
 /* MENU */
-/* TITRE */
+
+
+    /* TITRE */
+    
+    
+    
 .jumbotron 
   background-image: url("../media/titre-b2.jpg")
   background-size: cover
@@ -108,6 +123,8 @@ h1
 	
 #title-slide
   opacity: 0
+  font-family: 'Abril Fatface', cursive
+  
   
 .title 
   margin-bottom: 10px
@@ -131,7 +148,7 @@ h1
   100% 
     text-shadow: 0 0 6px #DC1421
 
-/* BOUTONS */
+    /* BOUTONS */
 .btn1 
   background-color: #DC1421
   opacity: 0.3
@@ -172,7 +189,10 @@ h1
     opacity: 0.3
 
 
+
 /* ABOUT ME */
+
+
 
 .infos 
   line-height: 28px
@@ -198,8 +218,11 @@ h1
 .langues
   line-height: 40px
     
+    
 
 /* AUTRES */
+
+
 
 #section1, #section2, #section3, #section4
   display: none
