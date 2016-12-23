@@ -48,14 +48,20 @@ h1 {
 
 @keyframes btn-anim {
   from {
-    opacity: 0.5; }
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0); }
   to {
+    transform: translate3d(0, 0, 0);
     opacity: 1; } }
 @media screen and (min-width: 993px) {
   .contact {
     position: relative;
     top: 40px; } }
 /* MENU */
+/* TITRE */
 .jumbotron {
   background-image: url("../media/titre-b2.jpg");
   background-size: cover;
@@ -64,7 +70,7 @@ h1 {
   margin-top: 50px;
   opacity: 0;
   animation-name: jumbo;
-  animation-duration: 3s;
+  animation-duration: 2, 5s;
   animation-fill-mode: forwards; }
 
 @keyframes jumbo {
@@ -75,9 +81,31 @@ h1 {
 @media screen and (max-width: 768px) {
   .jumbotron {
     background-image: url("../media/titre-b3.jpg"); } }
+@media screen and (max-width: 768px) {
+  #title-slide {
+    position: relative;
+    right: 50px; } }
 #title-slide {
   opacity: 0; }
 
+.title {
+  margin-bottom: 10px; }
+
+.title-text {
+  text-shadow: 0 0 3px MediumSlateBlue;
+  animation-name: titre-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-family: "Righteous", cursive; }
+
+@keyframes titre-anim {
+  0% {
+    text-shadow: 0 0 6px #DC1421; }
+  50% {
+    text-shadow: 0 0 6px #488CD3; }
+  100% {
+    text-shadow: 0 0 6px #DC1421; } }
+/* BOUTONS */
 .btn1 {
   background-color: #DC1421;
   opacity: 0.3; }
@@ -100,24 +128,19 @@ h1 {
   padding: 40px;
   border: solid white 3px;
   box-shadow: 10px 10px 5px #000000; }
+  .button-menu:hover {
+    animation-name: pulse;
+    animation-duration: 0.7s; }
 
-.title {
-  margin-bottom: 10px; }
-
-.title-text {
-  text-shadow: 0 0 3px MediumSlateBlue;
-  animation-name: titre-anim;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  font-family: "Righteous", cursive; }
-
-@keyframes titre-anim {
-  0% {
-    text-shadow: 0 0 6px #DC1421; }
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
   50% {
-    text-shadow: 0 0 6px #488CD3; }
-  100% {
-    text-shadow: 0 0 6px #DC1421; } }
+    transform: scale3d(1.05, 1.05, 1.05);
+    opacity: 0.6; }
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 0.3; } }
 /* ABOUT ME */
 .infos {
   line-height: 28px; }

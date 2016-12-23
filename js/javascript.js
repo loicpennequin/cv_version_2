@@ -2,20 +2,20 @@ $(document).ready(function(){
    
    
    
-    $('#title-slide').delay(2000).animate({
+    $('#title-slide').delay(1500).animate({
     	marginLeft:"+=33%",
     	opacity: 1
     	}, 1000);
     	
-    $('.logofb').delay(3000).animate({
+    $('.logofb').delay(2500).animate({
     	opacity: 0.5
     	}, 400);
     	
-    $('.logolkdn').delay(3400).animate({
+    $('.logolkdn').delay(2800).animate({
     	opacity: 0.5
     	}, 400);
     	
-    $('.logogit').delay(3800).animate({
+    $('.logogit').delay(3100).animate({
     	opacity: 0.5
     	}, 400);
     
